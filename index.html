@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <title>Poetherapy For Mental Health</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!----custom css link---->
+	<link rel="stylesheet" type="text/css" href="CSS styles/index.css">
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+    <!--<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    -->
+</head>
+
+<body>
+
+
+    <!--Header designs-->
+    <header>
+        <a href="#"><img src="Images/Poetherapy Logo.jpeg" alt="logoimg" class="logo"></a>
+
+        <ul class="navbar">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Join SG</a></li>
+            <li><a href="#">Self-screen</a></li>
+            <li><a href="#">Art room</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <!--fontawesome.com-->
+            <i class="bx bx-bell" style="color: #f50a0a;"></i>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+    </header>
+
+
+    <!--home designs-->
+    <section class="home">
+        <div class="home-img">
+            <img src="Images/MentalHealthMatters.webp" class="one">
+        </div>
+
+        <div class="home-text">
+            <h1>Art and Technology <br>A Mental Health Solution</h1>
+            <h5>How can we use art to heal and destigmatize mental illnesses? <br>Using technology to make services easier and ensure privacy! Here is your solution</h5>
+            <h3>Poetherapy - Your descret Partner</h3>
+            <a href="#" class="btn">Book Appointment</a>
+        </div>
+    </section>
+
+    <footer>
+        
+            <ul class="contact">
+                <li><a href="#" class='bx bxl-facebook-square'>FaceBook</i></a></li>
+                <li><a href="mailto:poetherapysession@gmail.com" i class='bx bx-envelope'>Email</i></a></li>
+                <li><a href="tel:+250787771750" i class='bx bxs-phone-call' ></i>Call Us</a></li>
+                <li><a href="sms:+250787771750" i class='bx bxs-message-rounded-dots' >Message Us</i></a></li>
+                </ul>
+            <div class="partners">
+                <img src="Images/Poetherapy Logo.jpeg">
+            </div>
+
+            <div>
+                <a href="{{url_for('LogIn')}}" class="bottom"><i class='bx bxs-registered'>LogIn</i></a>
+
+            </div>
+        
+    </footer>
+
+    <script type="text/javascript">
+
+		let menu = document.querySelector('#menu-icon');
+		let navbar = document.querySelector('.navbar');
+
+
+		menu.onclick = () => {
+			menu.classList.toggle('bx-x');
+			navbar.classList.toggle('open');
+            
+		}
+	</script>
+
+
+
+</body>
+</html>
+
